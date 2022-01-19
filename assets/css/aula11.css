@@ -1,3 +1,11 @@
+* { /* para todos os elementos HTML */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .block-1 {
     display: block;
     width: 300px;
@@ -15,4 +23,21 @@
     height: 300px;
     background: pink;
     border: solid 3px black;
+}
+
+.text-1 {
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px; /* espaçamento entre letras */
+}
+
+.paragraph {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 640; /* para quebrar o texto, deste modo não há necessidade de utilizar o <br /> no HTML */
+    line-height: 28px; /* espaçamento entre linhas */
+    max-width: 640px;
 }
