@@ -1,0 +1,47 @@
+.block {
+    background: black;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.block-1 {
+    left: 10px; /* move o bloco para direita */
+    /* position: relative; */
+    top: 10px; /* move o bloco para baixo */
+    /* right: 10px; move o bloco para esquerda */
+    /* bottom: 10px; move o bloco para cima */
+}
+
+.container {
+    max-width: 840px;
+    position: relative;
+}
+
+/* Bloco flutuante */
+.block-2 {
+    left: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.block-3 {
+    background: purple;
+}
+
+
+
+
+.block-4 {
+    background: green;
+    left: 50%;
+    position: absolute;
+    /* right: 0; */
+    top: 0;
+    transform: translateY(-50%) rotate(45deg); /* define uma translação, usando somente o valor do eixo y */
+    /* transform: translate(-50%, -50%); definição em 2D */
+}
+
+.block-5 {
+    background: palevioletred;
+}
