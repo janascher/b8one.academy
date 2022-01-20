@@ -1,0 +1,68 @@
+.block-1 {
+    background: purple;
+    height: 300px;
+    /* transition: background .3s ease-in-out; /* Transição da cor seja mais suave apenas no background */
+    transition: all .3s ease-in-out; /* Transição da cor seja mais suave em tudo */
+    width: 300px;
+}
+
+.block-2 {
+    background: burlywood;
+    height: 300px;
+    /* transition: background .3s ease-in-out; /* Transição da cor seja mais suave apenas no background */
+    transition: all .3s ease-in-out; /* Transição da cor seja mais suave em tudo */
+    width: 300px;
+}
+
+/* Muda a cor e move para a direita */
+.block-1:hover {
+    background: pink;
+    transform: translateX(20px);
+}
+
+/* Utilizado para selecionar elementos vazios */
+.block-2:empty {
+    display: none;
+}
+
+.input-1 {
+    background: lightgrey;
+    height: 50px;
+    width: 300px;
+}
+
+/* Ao clicar no elemento, ele faz algo. Neste exemplo, o input aumenta de tamanho */
+.input-1:focus {
+    width: 350px;
+}
+
+/* Ao clicar no checkbox, ele faz algo. Neste exemplo, altera a cor do label */
+.checkbox:checked + label {
+    background: lightsalmon;
+}
+
+/* Estilizando o disabled */
+.checkbox-2:disabled {
+    /* opacity: 0; */
+    display: none;
+}
+
+/* Estilizar somente o terceiro item da lista */
+.list-item:nth-child(3) {
+/*.list-item:nth-child(2n + 2) {
+.list-item:nth-child(even) {
+.list-item:nth-child(odd) { */
+    background: pink;
+}
+
+/* Estiliza o primeiro filho */
+.list-item:first-child {
+    color: orangered;
+    font-weight: bold;
+}
+
+/* Estiliza o último filho */
+.list-item:last-child {
+    color: green;
+    font-weight: bold;
+}
