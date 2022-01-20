@@ -1,0 +1,11 @@
+/* Estilizar todos, e somente, os meus inputs tipo texto */
+.input-text {
+    background: pink;
+    width: 300px;
+}
+
+/* OU estilizar através de seletor de atributos */
+input[type="number"] {
+    background: purple;
+    width: 300px;
+}
