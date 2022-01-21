@@ -1,0 +1,67 @@
+* {
+    background-color: black;
+}
+
+.title {
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.title:before,
+.title:after {
+    background: white;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+    width: 300px;
+}
+
+.title::before {
+    left: 30%;
+}
+
+.title:after {
+    right: 30%;
+}
+
+.subtitle {
+    text-align: center;
+    color: white;
+}
+
+/* Adiciona conteúdo antes do conteúdo do elemento selecionado */
+/* Isso funciona muito quando estamos fazendo tratativas de plataformas fechadas */
+.subtitle:before {
+    content: "Sorte é estar pronto quando";
+}
+
+.long-text {
+    text-align: center;
+    color: white;
+}
+
+/* Seleciona somente a primeira letra do conteúdo de um elemento */
+.long-text:first-letter {
+    font-size: 32px;
+}
+
+.input {
+   border: 2px solid white;
+   color: greenyellow;
+   height: 20px;
+   left: 50%;
+   position: absolute;
+   text-align: center;
+   transform: translateX(-50%);
+   width: 180px;
+}
+
+/* Seleciona elementos do formulário com texto e permite estilizar o texto */
+.input::placeholder {
+    color: blueviolet;
+}
