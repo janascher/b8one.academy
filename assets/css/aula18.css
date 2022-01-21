@@ -1,0 +1,35 @@
+.container {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    justify-content: space-between;
+}
+
+.block {
+    background: palevioletred;
+    border: 3px solid black;
+    height: 300px;
+    width: calc(20% - 40px);
+
+}
+
+.block-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* o @media screen define o tamanho de tela que o meu site irá se adaptar */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        background: lightseagreen;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background: gray;
+    }    
+}
