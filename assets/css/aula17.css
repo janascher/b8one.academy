@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+
+    /* align-items alinha os flex itens de acordo com o eixo do container */
+    /* align-items: center; /* alinha os itens no eixo Y */
+    /* align-items: flex-start; /* alinha os itens ao início */
+    /* align-items: stretch; /* valor padrão, ele que faz com que os flex itens cresçam igualmente */
+    align-items: flex-end; /* alinha os itens ao final */
+
+    /* justify-content alinha os itens flex no container de acordo com a direção */
+    /* justify-content: center; /* alinha os itens no eixo X */
+    /* justify-content: start; /* alinha os itens ao início do container */
+    /* justify-content: flex-end; /* alinha os itens ao final do container */
+    /* justify-content: space-around; /* cria um espaçamento entre os elementos. Os espaçamentos do meio são 2x maiores que o inicial e final */
+    justify-content: space-between; /* cria um espaçamento igual entre os elementos, mantendo o primeiro grudado no início e o último no final */
+    /* justify-content: space-evenly; /* cria um espaçamento igual entre os elementos, tanto do início quanto do último no final */
+
+    /* flex-direction define a direção dos flex itens  */
+    flex-direction: row; /* os itens ficam em linha */
+    /* flex-direction: row-reverse; /* os itens ficam em linha reversa, ou seja 3, 2, 1 */
+    /* flex-direction: column; /* os itens ficam em uma única coluna, um embaixo do outro */
+
+    /* flex-wrap define se os itens devem quebrar ou não a linha E quando um dos flex itens atinge o limite do conteúdo/tela, o último item passa para a coluna debaixo e assim por diante */
+    flex-wrap: wrap; /* quebra a linha assim que um dos flex itens não puder mais ser compactado */
+
+    /* gap define o tamanho da lacuna entre as linhas e colunas */
+    gap: 20px 30px;
+}
+
+.block {
+    background: palevioletred;
+    border: 3px solid black;
+    height: 300px;
+    /* margin: 0 10px; */
+    /*width: 300px;*/
+    width: calc(20% - 40px);
+
+}
+
+.block-1 {
+    /* order: 3; /* modifica a ordem dos flex itens. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5 */
+}
+
+.block-2 {
+    height: 350px;
+    /* o align-self funciona como o align-items, porém se aplica ao elemento filho */
+    /* align-self: flex-start;*/
+}
+
+.block-3 {
+    /* height: 400px; */
+}
+
+.block-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
