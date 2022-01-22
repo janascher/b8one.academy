@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+
+:root {
+
+    /*== Colors ==*/
+    --color-white-primary: #EEF4FF;
+    --color-dark-primary:#61646B;
+    --color-button-primary: #3E3FD8;
+
+
+    /*== Font and Typography ==*/
+    --body-font: "Jost", sans-serif;
+    --biggest-font-size: 64px;
+    --bigger-font-size: 36px;
+    --h2-font-size: 48px;
+    --big-font-size: 24px;
+    --normal-font-size: 18px;
+
+    /* == Font Weight == */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*== Margenes ==*/
+    --mb-1: 8px;
+    --mb-2: 16px;
+    --mb-3: 24px;
+    --mb-4: 32px;
+    --mb-5: 40px;
+    --mb-6: 48px;
+    --mb-7: 50px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-dark-primary);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    text-align: center;
+    margin-bottom: var(--mb-4);
+}
+
+a {
+    color: var(--color-dark-primary);
+    text-decoration: none;
+}
+
+.header {
+    background: var(--color-white-primary);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: var(--big-font-size);
+}
+
+.nav__menu {
+    margin: var(--mb-7) 0 var(--mb-7) 0;
+}
+
+.nav__list {
+    list-style: none
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+    display: inline;
+    padding: var(--mb-4) var(--mb-5);
+    text-align: center;
+}
+
+.nav__sign a {
+    color: var(--color-button-primary);
+}
