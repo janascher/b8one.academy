@@ -20,16 +20,6 @@
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
-
-        /*== Margenes ==*/
-        --mb-1: 16px;
-        --mb-2: 20px;
-        /*--mb-3: 24px;
-        --mb-4: 32px;*/
-        --mb-5: 36px;
-        --mb-6: 48px;
-        /*--mb-7: 50px;*/
-
 }
 
 /* == BASE == */
@@ -54,7 +44,7 @@ body {
 
 /* == HEADER == */
 .header {
-    margin-top: var(--mb-2);
+    margin-top: 20px;
     margin-bottom: 64px;
 }
 
@@ -105,7 +95,7 @@ body {
 
 /* == FILTER SECTION == */
 .pokemon-filter-section {
-    margin-bottom: var(--mb-6);
+    margin-bottom: 48px;
 }
 
 .pokemon-filter-section-title {
@@ -114,7 +104,7 @@ body {
     font-size: var(--bigger-font-size);
     line-height: 150%;
     margin-top: 0;
-    margin-bottom: var(--mb-5);
+    margin-bottom: 36px;
 }
 
 .pokemon-filter-list {
@@ -126,7 +116,7 @@ body {
 }
 
 .pokemon-filter-item:not(:last-child) {
-    margin-right: var(--mb-1);
+    margin-right: 16px;
 }
 
 .pokemon-filter-button {
@@ -176,7 +166,7 @@ body {
     background: var(--color-blue-primary);
     display: flex;
     justify-content: center;
-    margin-bottom: var(--mb-1);
+    margin-bottom: 16px;
     width: 100%;
 }
 
@@ -185,7 +175,7 @@ body {
     display: flex;    
     justify-content: space-between;
     padding: 0 20px;
-    margin-bottom: var(--mb-1);
+    margin-bottom: 16px;
 }
 
 .pokemons-card-name {
