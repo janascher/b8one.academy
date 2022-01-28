@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600&display=swap');
+
+:root {
+
+    /*== Colors ==*/
+    --color-background: #323232;
+    --color-blue-primary: #1A82B1;
+    --color-dark-primary: #46444B;
+    --color-yellow-primary: #FFCC00;
+    --color-white-primary: #FFFFFF;
+
+    /*== Font and Typography ==*/
+    --body-font: 'Mukta Malar', sans-serif;
+    --normal-font-size: 14px;    
+    --big-font-size: 16px;
+    --bigger-font-size: 24px;
+    --h2-font-size: 18px;
+
+    /* == Font Weight == */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+        /*== Margenes ==*/
+        --mb-1: 16px;
+        --mb-2: 20px;
+        /*--mb-3: 24px;
+        --mb-4: 32px;*/
+        --mb-5: 36px;
+        --mb-6: 48px;
+        /*--mb-7: 50px;*/
+
+}
+
+/* == BASE == */
+
+* {
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+body {
+    background: var(--color-background);
+    margin: 0;
+}
+
+/* == GENERAL COMPONENTS == */
+.container {
+    margin: 0 auto;
+    max-width: 1372px; 
+    width: 100%;
+    padding: 0 16px;
+}
+
+/* == HEADER == */
+.header {
+    margin-top: var(--mb-2);
+    margin-bottom: 64px;
+}
+
+.header > .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Search */
+.search {
+    max-width: 370px;
+    position: relative;
+    width: 100%;
+}
+
+.search-button {
+    background: transparent;
+    border: 0;
+    height: 30px;
+    left: 20px;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-40%);
+    top: 50%;
+}
+
+.search-input {
+    background: var(--color-background);
+    border: 2px solid var(--color-white-primary);
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: var(--color-white-primary);    
+    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    height: 60px;
+    line-height: 150%;  
+    padding-left: 70px;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: var(--color-white-primary);    
+    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    line-height: 150%;
+}
+
+/* == FILTER SECTION == */
+.pokemon-filter-section {
+    margin-bottom: var(--mb-6);
+}
+
+.pokemon-filter-section-title {
+    color: var(--color-white-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--bigger-font-size);
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: var(--mb-5);
+}
+
+.pokemon-filter-list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon-filter-item:not(:last-child) {
+    margin-right: var(--mb-1);
+}
+
+.pokemon-filter-button {
+    background: transparent;
+    border: 1px solid var(--color-dark-primary);
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #46444B;
+    cursor: pointer;
+    font-weight: var(--font-regular);
+    font-size: var(--big-font-size);
+    line-height: 150%;
+    padding: 9px 20px;
+    transition: all 0.2s linear;
+}
+
+.pokemon-filter-item-active > .pokemon-filter-button, .pokemon-filter-button:hover {
+    border: 2px solid var(--color-white-primary);
+    color: var(--color-white-primary);
+}
+
+/* == MAIN == */
+.pokemons-list {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemons-item {
+    width: calc(25% - 23px);
+}
+
+.pokemons-card {
+    background: var(--color-dark-primary);
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 42px;
+    width: 100%;
+}
+
+.pokemons-card-image-container {
+    align-items: center;
+    background: var(--color-blue-primary);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-1);
+    width: 100%;
+}
+
+.pokemons-card-info {
+    align-items: center;
+    display: flex;    
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: var(--mb-1);
+}
+
+.pokemons-card-name {
+    color: var(--color-white-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--bigger-font-size);
+    line-height: 150%;
+    margin: 0;
+    margin-right: 16px;
+}
+
+.pokemons-card-title {
+    border: 1px solid var(--color-white-primary);
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: var(--color-white-primary);
+    display: inline-block;
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    letter-spacing: 1.3px;
+    line-height: 150%;
+    padding: 4px 12px;
+}
+
+.pokemons-card-attributes {
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemons-card-attributes-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.pokemons-cardd-attributes-name {
+    color: var(--color-white-primary);
+    display: block;
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    line-height: 150%;
+    margin-bottom: 6px;
+}
+
+.pokemons-card-attributes-progress {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.pokemons-card-attributes-progress-bar {
+    background: var(--color-yellow-primary);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+}
