@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Final - Pokémon</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-link"></a>
+                <img src="./src/assets/images/logo-pokemon.png" alt="Pokémon" class="logo-image">
+            </div>
+            <div class="search">
+                <button class="search-button" type="submit">
+                    <img src="./src/assets/images/search-icon.png" alt="Ícone de busca" class="search-button-icon">
+                </button>
+                <input class="search-input" type="search" placeholder="Busca por Pokémon pelo nome">
+            </div>
+        </div>
+    </header>
+
+    <section class="pokemon-filter-section">
+        <div class="container">
+            <h2 class="pokemon-filter-section-title">
+                Busque o Pokémon por tipo!
+            </h2>
+            <ul class="pokemon-filter-list">
+                <li class="pokemon-filter-item pokemon-filter-item-active">
+                    <button class="pokemon-filter-button" data-pokemon-type-name="all">
+                        All
+                    </button>
+                </li>
+                <li class="pokemon-filter-item">
+                    <button class="pokemon-filter-button" data-pokemon-type-name="fire">
+                        Fire
+                    </button>
+                </li>
+                <li class="pokemon-filter-item" data-pokemon-type-name="water">
+                    <button class="pokemon-filter-button">
+                        Water
+                    </button>
+                </li>
+                <li class="pokemon-filter-item" data-pokemon-type-name="electric">
+                    <button class="pokemon-filter-button">
+                        Eletric
+                    </button>
+                </li>
+                <li class="pokemon-filter-item" data-pokemon-type-name="poison">
+                    <button class="pokemon-filter-button">
+                        Poison
+                    </button>
+                </li>
+            </ul>            
+        </div>
+    </section>
+
+    <main class="pokemons">
+        <div class="container">
+            <ul class="pokemons-list">
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pokemons-item">
+                    <div class="pokemons-card" data-pokemon-type-name="electric">
+                        <div class="pokemons-card-image-container">
+                            <img src=".//src/assets/images/pikachu-image.png" alt="Pikachu" class="pokemons-card-image">
+                        </div>
+                        <div class="pokemons-card-info"> 
+                            <h3 class="pokemons-card-name js-pokemons-card-name">
+                                Pikachu
+                            </h3>
+                            <span class="pokemons-card-title">
+                                Electric
+                            </span>
+                        </div>
+                        <ul class="pokemons-card-attributes">
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                HP 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Attack 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Defense
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Attack
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Special Defense 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                            <li class="pokemons-card-attributes-item">
+                                <span class="pokemons-cardd-attributes-name">
+                                    Speed 
+                                </span>
+                                <div class="pokemons-card-attributes-progress">
+                                    <div class="pokemons-card-attributes-progress-bar"></div>
+                                </div>                          
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>            
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
