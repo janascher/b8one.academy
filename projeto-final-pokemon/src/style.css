@@ -121,10 +121,10 @@ body {
 
 .pokemon-filter-button {
     background: transparent;
-    border: 1px solid var(--color-dark-primary);
+    border: 1px solid var(--color-white-primary);
     box-sizing: border-box;
     border-radius: 50px;
-    color: #46444B;
+    color: var(--color-white-primary);
     cursor: pointer;
     font-weight: var(--font-regular);
     font-size: var(--big-font-size);
@@ -134,8 +134,8 @@ body {
 }
 
 .pokemon-filter-item-active > .pokemon-filter-button, .pokemon-filter-button:hover {
-    border: 2px solid var(--color-white-primary);
-    color: var(--color-white-primary);
+    border: 2px solid var(--color-yellow-primary);
+    color: var(--color-yellow-primary);
 }
 
 /* == MAIN == */
