@@ -84,6 +84,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 📝 Licença
 
 Este projeto está sobre a licença [MIT](./LICENSE).<p align="center">
-    <br>
-    <sub> Feito com ❤️ por <a href="https://github.com/janascher">Janaína Scher</a></sub>
-</p>
