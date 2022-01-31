@@ -84,7 +84,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 📝 Licença
 
 Este projeto está sobre a licença [MIT](./LICENSE).<p align="center">
-    <img alt="Curso ReactJS da Rocketseat" title="#CursoReactJSdaRocketseat" src="https://user-images.githubusercontent.com/79182711/148577891-14bd8e74-6644-4373-bc00-2890051789fb.PNG" width="750">
     <br>
     <sub> Feito com ❤️ por <a href="https://github.com/janascher">Janaína Scher</a></sub>
 </p>
